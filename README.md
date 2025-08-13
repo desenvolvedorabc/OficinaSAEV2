@@ -37,8 +37,8 @@ Este arquivo contém os resultados das avaliações dos alunos nos testes realiz
 | AVA_ANO             | INTEGER        | Ano da Avaliação | 
 | TES_ID              | INTEGER        | Código de Identificação do teste no sistema SAEV | 
 | DIS_NOME            | VARCHAR(20)    | Nome da Disciplina | 
-| ALT_FINALIZADO      | 
-| ALT_JUSTIFICATIVA   | 
+| ALT_FINALIZADO      | INTEGER        | Se o valor for 0, indica que o aluno não participou do teste por alguma razão; Se o valor for 1 indica que o aluno fez o teste |  
+| ALT_JUSTIFICATIVA   | VARCHAR(50)    | Texto descritivo sobre o motivo do aluno não ter realizado o teste | 
 | NR_QUESTAO          | VARCHAR(8)     | Quanto o teste for com questões objetivas (Lingua Portuguesa ou Matemática) assume o número assume o código da questão na base do SAEV; se for um teste de fluência leitora, assume "N/A" | 
 | TEG_ORDEM           | VARCHAR(5)     | Quanto o teste for com questões objetivas (Lingua Portuguesa ou Matemática) assume o número sequencial correspondente a questão; se for um teste de fluência leitora assume "N/A" |    
 | ATR_RESPOSTA        | VARCHAR(15)    | Para teste de Lingua Portuguesa e Matemática (com questões objetivas) pode assumir os valores "A", "B", "C", "D", "-"; para Teste de Leitura (fluência leitora), pode assumir "nao_leitor", "silabas", "palavras", "frases", "nao_fluente", "fluente", "N/A". |  
