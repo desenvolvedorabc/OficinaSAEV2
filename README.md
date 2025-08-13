@@ -21,7 +21,10 @@ Esta seção apresenta as estruturas de dados de entrada (microdados do SAEV) e 
 
 #### Arquivo avaliacao.csv 
 
-Este arquivo contém os resultados das avaliações dos alunos nos testes realizados. As métricas de avaliação dervem ser obtidas deste arquivo. Ou seja, a tabela fato do modelo Star Schema utiliza utiliza como fonte os dados deste arquivo. A primeira linha do arquivo "avaliacao.csv" contém os nomes dos campos conforme a tabela a seguir: 
+Este arquivo contém os resultados das avaliações dos alunos nos testes realizados no sistema SAEV. Há dois tipos de testes nas avaliações do SAEV:  Objetivas – realizadas nas disciplinas de Lingua Portuguesa e Matemática; e Leitura – Em que o aluno ler um texto e, a ele, o avaliador atribui uma classificação. As provas objetivas admitem respostas do tipo  "A", "B", "C", "D"; e nas provas de leitura os alunos pordem ser classificados como "nao_leitor", "silabas", "palavras", "frases", "nao_fluente" e "fluente".   
+
+
+As métricas de avaliação dervem ser obtidas deste arquivo. Ou seja, a tabela fato do modelo Star Schema utiliza utiliza como fonte os dados deste arquivo. A primeira linha do arquivo "avaliacao.csv" contém os nomes dos campos conforme a tabela a seguir: 
 
 | Nome do campo       | Tipo de Dados  | Descrição | 
 | ------------------- | -------------- | --------- | 
@@ -44,9 +47,6 @@ Este arquivo contém os resultados das avaliações dos alunos nos testes realiz
 | ATR_RESPOSTA        | VARCHAR(15)    | Para teste de Lingua Portuguesa e Matemática (com questões objetivas) pode assumir os valores "A", "B", "C", "D", "-"; para Teste de Leitura (fluência leitora), pode assumir "nao_leitor", "silabas", "palavras", "frases", "nao_fluente", "fluente", "N/A". |  
 | ATR_CERTO           | VARCHAR(5)     | Quanto o teste for com questões objetivas (Lingua Portuguesa ou Matemática) assume 1 se a resposta do aluno for correta ou 0 se a resposta for errada; Para teste de fluência leitora, assume "N/A" |  
 | MTI_CODIGO          | VARCHAR(5)     | Quanto o teste for com questões objetivas (Lingua Portuguesa ou Matemática) assume assume o código do descritor da questão; se for um teste de fluência leitora, asusme "N/A" | 
-
-
-
 
 
 
