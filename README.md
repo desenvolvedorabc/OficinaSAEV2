@@ -1,5 +1,5 @@
 
-# Oficina de IA SAEV
+# Oficina de IA SAEV2
 
 
 Esta oficina tem como objetivo apresentar o uso do GitHub Copilot integrado ao VS Code para a produção de painéis de BI, além do desenvolvimento de código em Python e R para análise de dados.
